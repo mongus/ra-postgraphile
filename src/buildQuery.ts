@@ -223,7 +223,7 @@ export const buildQuery = (options: ProviderOptions) => (
       const { $condition: condition, ...pluginFilters } = filter || {}
 
       const orderBy =
-        sort && sort.field && sort.order
+        sort && sort.field && sort.field !== 'id' && sort.order
           ? [createSortingKey(sort.field, sort.order as SortDirection)]
           : [NATURAL_SORTING]
       const filters = createFilter(pluginFilters, type)
