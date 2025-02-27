@@ -306,7 +306,7 @@ export const createGetListQuery = (
   const conditionArg = hasCondition && 'condition: $condition'
 
   // order by
-  const orderByQueryArg = hasOrdering && `$orderBy: [${pluralizedResourceTypeName}OrderBy!]`
+  const orderByQueryArg = hasOrdering && `$orderBy: [${resourceTypename}OrderBy!]`
   const orderByArg = hasOrdering && 'orderBy: $orderBy'
 
   // order by
