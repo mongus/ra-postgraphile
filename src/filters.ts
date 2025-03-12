@@ -47,7 +47,7 @@ export const mapFilterType = (
     let operator: Operator = 'equalTo'
     // string uses includes as the default operator for historical reasons
     if (typeName === 'string') {
-      operator = 'includesInsensitive'
+      operator = 'includes'
     }
 
     // a type of FullText uses matches as the default operator for historical reasons
